@@ -1,0 +1,10 @@
+name: Golang CI Lint with CodeQL
+
+on:
+  workflow_call:
+
+jobs:
+  lint:
+    uses: ./.github/workflows/golint.yml
+  code-ql:
+    uses: ./.github/workflows/codeql_auto.yml
