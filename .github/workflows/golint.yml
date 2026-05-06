@@ -13,4 +13,4 @@ jobs:
         uses: golangci/golangci-lint-action@v9.2.0
         with:
           version: latest
-          args: --disable-all -E "errcheck,gosimple,govet,ineffassign,staticcheck,unused,bodyclose,errchkjson,gocheckcompilerdirectives,gofmt,gosec,misspell,revive,zerologlint"
+          args: --enable-only "asciicheck,bidichk,bodyclose,errcheck,errchkjson,errorlint,gosimple,govet,ineffassign,staticcheck,unused,gocheckcompilerdirectives,gofmt,gosec,misspell,revive,zerologlint"
